@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Портфолио — Бюро Хомича</title>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="styles.css" rel="stylesheet"/>
+<meta content="Реализованные проекты Бюро Хомича: проектная, рабочая и исполнительная документация. Просматривайте PDF прямо на странице." name="description"/>
+</head>
+<body>
+<header class="site-header">
+<div class="container header-inner">
+<a class="logo" href="index.html#home">Бюро Хомича</a>
+<button aria-expanded="false" aria-label="Открыть меню" class="burger">
+<span></span><span></span><span></span>
+</button>
+<nav class="site-nav" id="site-nav">
+<ul>
+<li><a href="index.html#services">Услуги</a></li>
+<li><a class="current" href="portfolio.html">Портфолио</a></li>
+<li><a href="calc.html">Калькулятор</a></li>
+<li><a href="index.html#contact">Контакты</a></li>
+</ul>
+</nav>
+<a class="btn primary" href="https://t.me/Maksim_homich" target="_blank">Консультация</a>
+</div>
+</header>
+<main>
+<section class="hero portfolio-hero">
+<div class="container hero-inner">
+<h1 class="hero-title">Наше портфолио</h1>
+<p class="hero-subtitle">Смотреть чертежи и пояснительные записки онлайн — без скачивания</p>
+</div>
+</section>
+<section class="section portfolio-section">
+<div class="container">
+<div class="portfolio-filter">
+<button class="filter-btn active" data-filter="all">Все</button>
+<button class="filter-btn" data-filter="proj">Проектная</button>
+<button class="filter-btn" data-filter="work">Рабочая</button>
+<button class="filter-btn" data-filter="exec">Исполнительная</button>
+</div>
+<div class="cards-grid portfolio-grid" id="portfolio-grid">
+<article class="pf-card" data-cat="exec">
+<img alt="" class="pf-thumb" loading="lazy" src="thumbnails/smolensky-24-exec.jpg"/>
+<h3 class="pf-title">Смоленский бульвар 24 • Исполнительная АПС/СОУЭ</h3>
+<button class="btn small secondary" data-file="pdfs/smolensky-24-exec.pdf">Открыть PDF</button>
+</article>
+<article class="pf-card" data-cat="exec">
+<img alt="" class="pf-thumb" loading="lazy" src="thumbnails/snabtorg-lesnaya-28-exec.jpg"/>
+<h3 class="pf-title">Снабторг, Лесная 28 • Исполнительная АПС/СОУЭ</h3>
+<button class="btn small secondary" data-file="pdfs/snabtorg-lesnaya-28-exec.pdf">Открыть PDF</button>
+</article>
+<article class="pf-card" data-cat="exec">
+<img alt="" class="pf-thumb" loading="lazy" src="thumbnails/svn-kashin-17-11-24.jpg"/>
+<h3 class="pf-title">Кашин, Льнозавод • Исполнительная СВН</h3>
+<button class="btn small secondary" data-file="pdfs/svn-kashin-17-11-24.pdf">Открыть PDF</button>
+</article></div>
+</div>
+</section>
+</main>
+<!-- Modal -->
+<div aria-hidden="true" class="modal-overlay">
+<div class="modal">
+<button aria-label="Закрыть" class="modal-close">×</button>
+<iframe allowfullscreen="" height="100%" id="pdf-frame" loading="lazy" src="" title="PDF viewer" width="100%"></iframe>
+</div>
+</div>
+<footer class="site-footer">
+<div class="container footer-inner">
+<p>© Бюро Хомича, 2025</p>
+<p>
+<a href="https://t.me/Maksim_homich" target="_blank">Telegram</a> ·
+      <a href="mailto:me@homichmaxim.ru">me@homichmaxim.ru</a>
+</p>
+<a class="privacy" href="privacy.html">Политика конфиденциальности</a>
+</div>
+</footer>
+<script src="scripts.js"></script>
+<script src="portfolio.js"></script>
+</body>
+</html>

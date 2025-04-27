@@ -1,0 +1,1 @@
+const b=document.querySelector('.burger'),n=document.querySelector('#site-nav');b&&b.addEventListener('click',()=>{const e=b.getAttribute('aria-expanded')==='true'||!1;b.setAttribute('aria-expanded',!e),n.classList.toggle('open')});
